@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'com.brouken.player'
-    compileSdk = 36
+    compileSdk = 37
     ndkVersion '29.0.14206865'
 
     defaultConfig {
@@ -117,4 +117,8 @@ dependencies {
     implementation project(path: ':doubletapplayerview')
     implementation project(path: ':android-file-chooser')
     implementation fileTree(dir: "libs", include: ["lib-*.aar"])
+
+    implementation('com.suyashbelekar:exoplayerhdrutils:0.4.1') {
+        exclude group: "androidx.media3", module: "media3-exoplayer"
+    }
 }
