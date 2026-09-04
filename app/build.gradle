@@ -117,8 +117,4 @@ dependencies {
     implementation project(path: ':doubletapplayerview')
     implementation project(path: ':android-file-chooser')
     implementation fileTree(dir: "libs", include: ["lib-*.aar"])
-
-    implementation('com.suyashbelekar:exoplayerhdrutils:0.4.1') {
-        exclude group: "androidx.media3", module: "media3-exoplayer"
-    }
 }
